@@ -75,11 +75,12 @@ const typeDefs = gql`
     getMovies: [Movie]
     getMovie(id: ID): Movie
     getMoviesByGenre(id: ID): [MovieGenres]
+    getMoviesByTitle(title: String): [Movie]
   }
 
   type Mutation {
     addMovie(newMovieData: MovieInput): Movie
-    updateMovie(id:ID, newMovieData: MovieInput): Movie
+    updateMovie(id: ID, newMovieData: MovieInput): Movie
     deleteMovie(id: ID): Message
   }
 `;
@@ -115,7 +116,7 @@ const resolvers = {
           const { data: user } = await axios.get(
             `${usersBaseUrl}/users/${movie.UserMongoId}`
           );
-          movie.User = user
+          movie.User = user;
           await redis.set("movieDetail", JSON.stringify(movie));
           return movie;
         }
@@ -137,7 +138,18 @@ const resolvers = {
           await redis.set("moviesByGenre", JSON.stringify(movies));
           return movies;
         }
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    getMoviesByTitle: async (_, args) => {
+      try {
+        const title = args.title;
+        const { data: movies } = await axios.get(
+          `${moviesBaseUrl}/movies?search=${title}`
+        );
 
+        return movies;
       } catch (error) {
         console.log(error);
       }
@@ -166,11 +178,13 @@ const resolvers = {
           rating,
           UserMongoId,
           genres,
-          casts
+          casts,
         });
 
-        const { data: addedMovie } = await axios.get(`${moviesBaseUrl}/movies/${newMovie.id}`);
-        delete addedMovie.Casts
+        const { data: addedMovie } = await axios.get(
+          `${moviesBaseUrl}/movies/${newMovie.id}`
+        );
+        delete addedMovie.Casts;
 
         const moviesCache = await redis.get("movies");
         if (moviesCache) {
@@ -217,7 +231,7 @@ const resolvers = {
     },
     updateMovie: async (_, args) => {
       try {
-        const id = +args.id
+        const id = +args.id;
         const {
           title,
           synopsis,
@@ -239,18 +253,20 @@ const resolvers = {
           UserMongoId,
           genres,
           casts,
-        })
+        });
 
         let moviesCache = await redis.get("movies");
         const movieDetailCache = await redis.get("movieDetail");
 
-        const { data: updatedMovie } = await axios.get(`${moviesBaseUrl}/movies/${id}`);
+        const { data: updatedMovie } = await axios.get(
+          `${moviesBaseUrl}/movies/${id}`
+        );
 
         if (movieDetailCache && JSON.parse(movieDetailCache).id === id) {
-          await redis.set("movieDetail",  JSON.stringify(updatedMovie));
+          await redis.set("movieDetail", JSON.stringify(updatedMovie));
         }
 
-        delete updatedMovie.Casts
+        delete updatedMovie.Casts;
 
         let newCache = JSON.parse(moviesCache);
         let updatedIndex = JSON.parse(moviesCache).findIndex(
@@ -258,16 +274,16 @@ const resolvers = {
         );
 
         if (updatedIndex !== -1) {
-          delete newCache[updatedIndex]
-          newCache[updatedIndex] = updatedMovie
+          delete newCache[updatedIndex];
+          newCache[updatedIndex] = updatedMovie;
           await redis.set("movies", JSON.stringify(newCache));
         }
 
-        return updatedMovie
+        return updatedMovie;
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
-    }
+    },
   },
 };
 
