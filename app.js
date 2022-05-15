@@ -9,5 +9,5 @@ const server = new ApolloServer({
 });
 
 server.listen().then(({ url }) => {
-  console.log("🚀 ~ file: app.js ~ line 38 ~ .then ~ url", url);
+  console.log("🚀 ~ file: app.js ~ line 38 ~ .then ~ url", url); 
 });
