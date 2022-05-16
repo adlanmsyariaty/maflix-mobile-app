@@ -1,11 +1,10 @@
 FROM node:16.13
 
-WORKDIR /usr/local/user
+WORKDIR /usr/local/orchestrator
 
-ENV PORT=3001
-ENV PASSWORD=WDKSCfmwnsZgXZmd
+ENV PORT=4000
 
-COPY package.json package-lock.json /usr/local/user/
+COPY package.json package-lock.json /usr/local/orchestrator/
 
 RUN npm install && npm cache clean --force
 
