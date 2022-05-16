@@ -2,7 +2,13 @@ const { gql } = require("apollo-server");
 const moviesBaseUrl = "https://maflix-service-app.herokuapp.com";
 const axios = require("axios");
 const Redis = require("ioredis");
-const redis = new Redis();
+const redis = new Redis({
+  port: 17418, 
+  host: "redis-17418.c74.us-east-1-4.ec2.cloud.redislabs.com",
+  username: "default",
+  password: "KQsD0VHUW1oqCt428wB42A1yM3rKetSM",
+  db: 0,
+});
 
 const typeDefs = gql`
   type Genre {
