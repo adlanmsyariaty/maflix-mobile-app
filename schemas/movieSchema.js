@@ -1,5 +1,5 @@
 const { gql } = require("apollo-server");
-const usersBaseUrl = "http://localhost:3001";
+const usersBaseUrl = "https://maflix-service-user.herokuapp.com";
 const moviesBaseUrl = "https://maflix-service-app.herokuapp.com";
 const axios = require("axios");
 const Redis = require("ioredis");
