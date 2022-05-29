@@ -1,0 +1,584 @@
+{
+"MovieGenres": [
+	{
+		"id" : 127,
+		"movieId" : 17,
+		"genreId" : 1,
+		"createdAt" : "2022-05-08T09:37:30.575Z",
+		"updatedAt" : "2022-05-08T09:37:30.575Z"
+	},
+	{
+		"id" : 128,
+		"movieId" : 17,
+		"genreId" : 4,
+		"createdAt" : "2022-05-08T09:37:30.575Z",
+		"updatedAt" : "2022-05-08T09:37:30.575Z"
+	},
+	{
+		"id" : 16,
+		"movieId" : 5,
+		"genreId" : 5,
+		"createdAt" : "2022-04-30T14:39:07.118Z",
+		"updatedAt" : "2022-04-30T14:39:07.118Z"
+	},
+	{
+		"id" : 17,
+		"movieId" : 5,
+		"genreId" : 4,
+		"createdAt" : "2022-04-30T14:39:07.118Z",
+		"updatedAt" : "2022-04-30T14:39:07.118Z"
+	},
+	{
+		"id" : 18,
+		"movieId" : 5,
+		"genreId" : 1,
+		"createdAt" : "2022-04-30T14:39:07.118Z",
+		"updatedAt" : "2022-04-30T14:39:07.118Z"
+	},
+	{
+		"id" : 19,
+		"movieId" : 5,
+		"genreId" : 7,
+		"createdAt" : "2022-04-30T14:39:07.118Z",
+		"updatedAt" : "2022-04-30T14:39:07.118Z"
+	},
+	{
+		"id" : 20,
+		"movieId" : 5,
+		"genreId" : 2,
+		"createdAt" : "2022-04-30T14:39:07.118Z",
+		"updatedAt" : "2022-04-30T14:39:07.118Z"
+	},
+	{
+		"id" : 140,
+		"movieId" : 18,
+		"genreId" : 1,
+		"createdAt" : "2022-05-08T09:44:39.139Z",
+		"updatedAt" : "2022-05-08T09:44:39.139Z"
+	},
+	{
+		"id" : 141,
+		"movieId" : 18,
+		"genreId" : 4,
+		"createdAt" : "2022-05-08T09:44:39.139Z",
+		"updatedAt" : "2022-05-08T09:44:39.139Z"
+	},
+	{
+		"id" : 142,
+		"movieId" : 18,
+		"genreId" : 5,
+		"createdAt" : "2022-05-08T09:44:39.139Z",
+		"updatedAt" : "2022-05-08T09:44:39.139Z"
+	},
+	{
+		"id" : 143,
+		"movieId" : 18,
+		"genreId" : 12,
+		"createdAt" : "2022-05-08T09:44:39.139Z",
+		"updatedAt" : "2022-05-08T09:44:39.139Z"
+	},
+	{
+		"id" : 144,
+		"movieId" : 18,
+		"genreId" : 13,
+		"createdAt" : "2022-05-08T09:44:39.139Z",
+		"updatedAt" : "2022-05-08T09:44:39.139Z"
+	},
+	{
+		"id" : 33,
+		"movieId" : 8,
+		"genreId" : 7,
+		"createdAt" : "2022-04-30T14:41:54.163Z",
+		"updatedAt" : "2022-04-30T14:41:54.163Z"
+	},
+	{
+		"id" : 34,
+		"movieId" : 8,
+		"genreId" : 13,
+		"createdAt" : "2022-04-30T14:41:54.163Z",
+		"updatedAt" : "2022-04-30T14:41:54.163Z"
+	},
+	{
+		"id" : 35,
+		"movieId" : 8,
+		"genreId" : 4,
+		"createdAt" : "2022-04-30T14:41:54.163Z",
+		"updatedAt" : "2022-04-30T14:41:54.163Z"
+	},
+	{
+		"id" : 36,
+		"movieId" : 8,
+		"genreId" : 2,
+		"createdAt" : "2022-04-30T14:41:54.163Z",
+		"updatedAt" : "2022-04-30T14:41:54.163Z"
+	},
+	{
+		"id" : 37,
+		"movieId" : 8,
+		"genreId" : 1,
+		"createdAt" : "2022-04-30T14:41:54.163Z",
+		"updatedAt" : "2022-04-30T14:41:54.163Z"
+	},
+	{
+		"id" : 159,
+		"movieId" : 19,
+		"genreId" : 6,
+		"createdAt" : "2022-05-08T10:05:15.794Z",
+		"updatedAt" : "2022-05-08T10:05:15.794Z"
+	},
+	{
+		"id" : 160,
+		"movieId" : 19,
+		"genreId" : 8,
+		"createdAt" : "2022-05-08T10:05:15.794Z",
+		"updatedAt" : "2022-05-08T10:05:15.794Z"
+	},
+	{
+		"id" : 163,
+		"movieId" : 23,
+		"genreId" : 2,
+		"createdAt" : "2022-05-08T10:08:11.055Z",
+		"updatedAt" : "2022-05-08T10:08:11.055Z"
+	},
+	{
+		"id" : 164,
+		"movieId" : 23,
+		"genreId" : 6,
+		"createdAt" : "2022-05-08T10:08:11.055Z",
+		"updatedAt" : "2022-05-08T10:08:11.055Z"
+	},
+	{
+		"id" : 77,
+		"movieId" : 10,
+		"genreId" : 2,
+		"createdAt" : "2022-05-04T15:58:05.999Z",
+		"updatedAt" : "2022-05-04T15:58:05.999Z"
+	},
+	{
+		"id" : 78,
+		"movieId" : 10,
+		"genreId" : 3,
+		"createdAt" : "2022-05-04T15:58:05.999Z",
+		"updatedAt" : "2022-05-04T15:58:05.999Z"
+	},
+	{
+		"id" : 79,
+		"movieId" : 9,
+		"genreId" : 13,
+		"createdAt" : "2022-05-04T15:58:40.810Z",
+		"updatedAt" : "2022-05-04T15:58:40.810Z"
+	},
+	{
+		"id" : 80,
+		"movieId" : 9,
+		"genreId" : 1,
+		"createdAt" : "2022-05-04T15:58:40.810Z",
+		"updatedAt" : "2022-05-04T15:58:40.810Z"
+	},
+	{
+		"id" : 81,
+		"movieId" : 3,
+		"genreId" : 9,
+		"createdAt" : "2022-05-04T15:59:11.199Z",
+		"updatedAt" : "2022-05-04T15:59:11.199Z"
+	},
+	{
+		"id" : 82,
+		"movieId" : 3,
+		"genreId" : 1,
+		"createdAt" : "2022-05-04T15:59:11.199Z",
+		"updatedAt" : "2022-05-04T15:59:11.199Z"
+	},
+	{
+		"id" : 83,
+		"movieId" : 3,
+		"genreId" : 4,
+		"createdAt" : "2022-05-04T15:59:11.199Z",
+		"updatedAt" : "2022-05-04T15:59:11.199Z"
+	},
+	{
+		"id" : 84,
+		"movieId" : 3,
+		"genreId" : 13,
+		"createdAt" : "2022-05-04T15:59:11.199Z",
+		"updatedAt" : "2022-05-04T15:59:11.199Z"
+	},
+	{
+		"id" : 85,
+		"movieId" : 4,
+		"genreId" : 2,
+		"createdAt" : "2022-05-04T15:59:47.007Z",
+		"updatedAt" : "2022-05-04T15:59:47.007Z"
+	},
+	{
+		"id" : 86,
+		"movieId" : 4,
+		"genreId" : 3,
+		"createdAt" : "2022-05-04T15:59:47.007Z",
+		"updatedAt" : "2022-05-04T15:59:47.007Z"
+	},
+	{
+		"id" : 87,
+		"movieId" : 11,
+		"genreId" : 5,
+		"createdAt" : "2022-05-04T16:00:12.949Z",
+		"updatedAt" : "2022-05-04T16:00:12.949Z"
+	},
+	{
+		"id" : 88,
+		"movieId" : 11,
+		"genreId" : 9,
+		"createdAt" : "2022-05-04T16:00:12.949Z",
+		"updatedAt" : "2022-05-04T16:00:12.949Z"
+	},
+	{
+		"id" : 89,
+		"movieId" : 11,
+		"genreId" : 2,
+		"createdAt" : "2022-05-04T16:00:12.949Z",
+		"updatedAt" : "2022-05-04T16:00:12.949Z"
+	},
+	{
+		"id" : 90,
+		"movieId" : 11,
+		"genreId" : 1,
+		"createdAt" : "2022-05-04T16:00:12.949Z",
+		"updatedAt" : "2022-05-04T16:00:12.949Z"
+	},
+	{
+		"id" : 91,
+		"movieId" : 11,
+		"genreId" : 4,
+		"createdAt" : "2022-05-04T16:00:12.949Z",
+		"updatedAt" : "2022-05-04T16:00:12.949Z"
+	},
+	{
+		"id" : 92,
+		"movieId" : 7,
+		"genreId" : 1,
+		"createdAt" : "2022-05-04T16:00:44.161Z",
+		"updatedAt" : "2022-05-04T16:00:44.161Z"
+	},
+	{
+		"id" : 93,
+		"movieId" : 7,
+		"genreId" : 2,
+		"createdAt" : "2022-05-04T16:00:44.161Z",
+		"updatedAt" : "2022-05-04T16:00:44.161Z"
+	},
+	{
+		"id" : 94,
+		"movieId" : 7,
+		"genreId" : 3,
+		"createdAt" : "2022-05-04T16:00:44.161Z",
+		"updatedAt" : "2022-05-04T16:00:44.161Z"
+	},
+	{
+		"id" : 95,
+		"movieId" : 7,
+		"genreId" : 4,
+		"createdAt" : "2022-05-04T16:00:44.161Z",
+		"updatedAt" : "2022-05-04T16:00:44.161Z"
+	},
+	{
+		"id" : 96,
+		"movieId" : 7,
+		"genreId" : 7,
+		"createdAt" : "2022-05-04T16:00:44.161Z",
+		"updatedAt" : "2022-05-04T16:00:44.161Z"
+	},
+	{
+		"id" : 97,
+		"movieId" : 6,
+		"genreId" : 1,
+		"createdAt" : "2022-05-04T16:01:30.605Z",
+		"updatedAt" : "2022-05-04T16:01:30.605Z"
+	},
+	{
+		"id" : 98,
+		"movieId" : 6,
+		"genreId" : 9,
+		"createdAt" : "2022-05-04T16:01:30.605Z",
+		"updatedAt" : "2022-05-04T16:01:30.605Z"
+	},
+	{
+		"id" : 99,
+		"movieId" : 6,
+		"genreId" : 5,
+		"createdAt" : "2022-05-04T16:01:30.605Z",
+		"updatedAt" : "2022-05-04T16:01:30.605Z"
+	},
+	{
+		"id" : 100,
+		"movieId" : 6,
+		"genreId" : 4,
+		"createdAt" : "2022-05-04T16:01:30.605Z",
+		"updatedAt" : "2022-05-04T16:01:30.605Z"
+	},
+	{
+		"id" : 101,
+		"movieId" : 6,
+		"genreId" : 3,
+		"createdAt" : "2022-05-04T16:01:30.605Z",
+		"updatedAt" : "2022-05-04T16:01:30.605Z"
+	},
+	{
+		"id" : 102,
+		"movieId" : 6,
+		"genreId" : 2,
+		"createdAt" : "2022-05-04T16:01:30.605Z",
+		"updatedAt" : "2022-05-04T16:01:30.605Z"
+	},
+	{
+		"id" : 103,
+		"movieId" : 6,
+		"genreId" : 7,
+		"createdAt" : "2022-05-04T16:01:30.605Z",
+		"updatedAt" : "2022-05-04T16:01:30.605Z"
+	},
+	{
+		"id" : 104,
+		"movieId" : 12,
+		"genreId" : 1,
+		"createdAt" : "2022-05-04T16:01:54.540Z",
+		"updatedAt" : "2022-05-04T16:01:54.540Z"
+	},
+	{
+		"id" : 105,
+		"movieId" : 12,
+		"genreId" : 13,
+		"createdAt" : "2022-05-04T16:01:54.540Z",
+		"updatedAt" : "2022-05-04T16:01:54.540Z"
+	},
+	{
+		"id" : 106,
+		"movieId" : 12,
+		"genreId" : 4,
+		"createdAt" : "2022-05-04T16:01:54.540Z",
+		"updatedAt" : "2022-05-04T16:01:54.540Z"
+	},
+	{
+		"id" : 107,
+		"movieId" : 12,
+		"genreId" : 2,
+		"createdAt" : "2022-05-04T16:01:54.540Z",
+		"updatedAt" : "2022-05-04T16:01:54.540Z"
+	},
+	{
+		"id" : 108,
+		"movieId" : 1,
+		"genreId" : 1,
+		"createdAt" : "2022-05-04T16:02:25.644Z",
+		"updatedAt" : "2022-05-04T16:02:25.644Z"
+	},
+	{
+		"id" : 109,
+		"movieId" : 1,
+		"genreId" : 4,
+		"createdAt" : "2022-05-04T16:02:25.644Z",
+		"updatedAt" : "2022-05-04T16:02:25.644Z"
+	},
+	{
+		"id" : 178,
+		"movieId" : 25,
+		"genreId" : 1,
+		"createdAt" : "2022-05-08T10:21:10.693Z",
+		"updatedAt" : "2022-05-08T10:21:10.693Z"
+	},
+	{
+		"id" : 179,
+		"movieId" : 25,
+		"genreId" : 2,
+		"createdAt" : "2022-05-08T10:21:10.693Z",
+		"updatedAt" : "2022-05-08T10:21:10.693Z"
+	},
+	{
+		"id" : 180,
+		"movieId" : 25,
+		"genreId" : 3,
+		"createdAt" : "2022-05-08T10:21:10.693Z",
+		"updatedAt" : "2022-05-08T10:21:10.693Z"
+	},
+	{
+		"id" : 181,
+		"movieId" : 25,
+		"genreId" : 4,
+		"createdAt" : "2022-05-08T10:21:10.693Z",
+		"updatedAt" : "2022-05-08T10:21:10.693Z"
+	},
+	{
+		"id" : 182,
+		"movieId" : 25,
+		"genreId" : 7,
+		"createdAt" : "2022-05-08T10:21:10.693Z",
+		"updatedAt" : "2022-05-08T10:21:10.693Z"
+	},
+	{
+		"id" : 183,
+		"movieId" : 25,
+		"genreId" : 13,
+		"createdAt" : "2022-05-08T10:21:10.693Z",
+		"updatedAt" : "2022-05-08T10:21:10.693Z"
+	},
+	{
+		"id" : 186,
+		"movieId" : 26,
+		"genreId" : 7,
+		"createdAt" : "2022-05-08T10:25:31.714Z",
+		"updatedAt" : "2022-05-08T10:25:31.714Z"
+	},
+	{
+		"id" : 187,
+		"movieId" : 26,
+		"genreId" : 10,
+		"createdAt" : "2022-05-08T10:25:31.714Z",
+		"updatedAt" : "2022-05-08T10:25:31.714Z"
+	},
+	{
+		"id" : 120,
+		"movieId" : 16,
+		"genreId" : 1,
+		"createdAt" : "2022-05-08T08:12:20.695Z",
+		"updatedAt" : "2022-05-08T08:12:20.695Z"
+	},
+	{
+		"id" : 121,
+		"movieId" : 16,
+		"genreId" : 3,
+		"createdAt" : "2022-05-08T08:12:20.695Z",
+		"updatedAt" : "2022-05-08T08:12:20.695Z"
+	},
+	{
+		"id" : 122,
+		"movieId" : 16,
+		"genreId" : 4,
+		"createdAt" : "2022-05-08T08:12:20.695Z",
+		"updatedAt" : "2022-05-08T08:12:20.695Z"
+	},
+	{
+		"id" : 123,
+		"movieId" : 16,
+		"genreId" : 9,
+		"createdAt" : "2022-05-08T08:12:20.695Z",
+		"updatedAt" : "2022-05-08T08:12:20.695Z"
+	},
+	{
+		"id" : 124,
+		"movieId" : 16,
+		"genreId" : 13,
+		"createdAt" : "2022-05-08T08:12:20.695Z",
+		"updatedAt" : "2022-05-08T08:12:20.695Z"
+	},
+	{
+		"id" : 190,
+		"movieId" : 27,
+		"genreId" : 7,
+		"createdAt" : "2022-05-08T10:30:19.845Z",
+		"updatedAt" : "2022-05-08T10:30:19.845Z"
+	},
+	{
+		"id" : 191,
+		"movieId" : 27,
+		"genreId" : 10,
+		"createdAt" : "2022-05-08T10:30:19.845Z",
+		"updatedAt" : "2022-05-08T10:30:19.845Z"
+	},
+	{
+		"id" : 192,
+		"movieId" : 20,
+		"genreId" : 5,
+		"createdAt" : "2022-05-08T10:32:16.600Z",
+		"updatedAt" : "2022-05-08T10:32:16.600Z"
+	},
+	{
+		"id" : 193,
+		"movieId" : 20,
+		"genreId" : 1,
+		"createdAt" : "2022-05-08T10:32:16.600Z",
+		"updatedAt" : "2022-05-08T10:32:16.600Z"
+	},
+	{
+		"id" : 194,
+		"movieId" : 20,
+		"genreId" : 4,
+		"createdAt" : "2022-05-08T10:32:16.600Z",
+		"updatedAt" : "2022-05-08T10:32:16.600Z"
+	},
+	{
+		"id" : 195,
+		"movieId" : 20,
+		"genreId" : 13,
+		"createdAt" : "2022-05-08T10:32:16.600Z",
+		"updatedAt" : "2022-05-08T10:32:16.600Z"
+	},
+	{
+		"id" : 196,
+		"movieId" : 22,
+		"genreId" : 3,
+		"createdAt" : "2022-05-08T10:36:07.485Z",
+		"updatedAt" : "2022-05-08T10:36:07.485Z"
+	},
+	{
+		"id" : 197,
+		"movieId" : 22,
+		"genreId" : 11,
+		"createdAt" : "2022-05-08T10:36:07.485Z",
+		"updatedAt" : "2022-05-08T10:36:07.485Z"
+	},
+	{
+		"id" : 198,
+		"movieId" : 2,
+		"genreId" : 8,
+		"createdAt" : "2022-05-08T10:36:33.640Z",
+		"updatedAt" : "2022-05-08T10:36:33.640Z"
+	},
+	{
+		"id" : 199,
+		"movieId" : 2,
+		"genreId" : 1,
+		"createdAt" : "2022-05-08T10:36:33.640Z",
+		"updatedAt" : "2022-05-08T10:36:33.640Z"
+	},
+	{
+		"id" : 200,
+		"movieId" : 2,
+		"genreId" : 4,
+		"createdAt" : "2022-05-08T10:36:33.640Z",
+		"updatedAt" : "2022-05-08T10:36:33.640Z"
+	},
+	{
+		"id" : 201,
+		"movieId" : 2,
+		"genreId" : 10,
+		"createdAt" : "2022-05-08T10:36:33.640Z",
+		"updatedAt" : "2022-05-08T10:36:33.640Z"
+	},
+	{
+		"id" : 202,
+		"movieId" : 24,
+		"genreId" : 11,
+		"createdAt" : "2022-05-08T10:40:44.675Z",
+		"updatedAt" : "2022-05-08T10:40:44.675Z"
+	},
+	{
+		"id" : 203,
+		"movieId" : 21,
+		"genreId" : 1,
+		"createdAt" : "2022-05-08T10:42:11.618Z",
+		"updatedAt" : "2022-05-08T10:42:11.618Z"
+	},
+	{
+		"id" : 204,
+		"movieId" : 21,
+		"genreId" : 2,
+		"createdAt" : "2022-05-08T10:42:11.618Z",
+		"updatedAt" : "2022-05-08T10:42:11.618Z"
+	},
+	{
+		"id" : 205,
+		"movieId" : 21,
+		"genreId" : 3,
+		"createdAt" : "2022-05-08T10:42:11.618Z",
+		"updatedAt" : "2022-05-08T10:42:11.618Z"
+	}
+]}
