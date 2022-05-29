@@ -12,6 +12,9 @@ Struktur Folder:
     - users - mongodb (port: 4001)
     - app - postgres (port: 4002)
 
+## Expo Link
+- https://expo.dev/@adlanmaliks/Maflix-App?serviceType=classic&distribution=expo-go
+
 ## W2D2
 
 Target:
