@@ -1,0 +1,33 @@
+{
+"Users": [
+	{
+		"id" : 1,
+		"email" : "adlan@gmail.com",
+		"password" : "$2b$10$GmAqCUSdtbcffmIyu8qQzejwUk3GUJoRwrEw4ax5pQh5Oec83zk1a",
+		"role" : "admin",
+		"phoneNumber" : "83435783",
+		"address" : "Jalan Hacktiv8 Student Phase 3",
+		"createdAt" : "2022-05-16T04:52:23.032Z",
+		"updatedAt" : "2022-05-16T04:52:23.032Z"
+	},
+	{
+		"id" : 2,
+		"email" : "malik@gmail.com",
+		"password" : "$2b$10$GQfUqWF1LsyrTnIMPiIP8.6kCOSYRMmaN7jb1SDC4mDZr2hcQ4kjq",
+		"role" : "admin",
+		"phoneNumber" : "83435783",
+		"address" : "Jalan Hacktiv8 Student Phase 4",
+		"createdAt" : "2022-05-16T04:52:23.101Z",
+		"updatedAt" : "2022-05-16T04:52:23.101Z"
+	},
+	{
+		"id" : 3,
+		"email" : "syariaty@gmail.com",
+		"password" : "$2b$10$GmAqCUSdtbcffmIyu8qQzejwUk3GUJoRwrEw4ax5pQh5Oec83zk1a",
+		"role" : "admin",
+		"phoneNumber" : "012345678",
+		"address" : "Jalan Hacktiv8 Student Phase 5",
+		"createdAt" : "2022-05-16T04:52:23.032Z",
+		"updatedAt" : "2022-05-16T04:52:23.032Z"
+	}
+]}
