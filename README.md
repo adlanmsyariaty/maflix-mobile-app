@@ -1,4 +1,4 @@
-# P3-Challenge-2
+# Maflix-Mobile-App
 
 UI Library: ...
 
