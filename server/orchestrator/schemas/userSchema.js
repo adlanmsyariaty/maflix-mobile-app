@@ -2,13 +2,13 @@ const { gql } = require("apollo-server");
 const usersBaseUrl = "https://maflix-service-user.herokuapp.com";
 const axios = require("axios");
 const Redis = require("ioredis");
-// const redis = new Redis({
-//   port: 13863,
-//   host: "redis-13863.c278.us-east-1-4.ec2.cloud.redislabs.com",
-//   username: "default",
-//   password: "xRzVSzQGR3GuoiHfK5ArPLf6yFvej3og",
-//   db: 0,
-// });
+const redis = new Redis({
+  port: 13863,
+  host: "redis-13863.c278.us-east-1-4.ec2.cloud.redislabs.com",
+  username: "default",
+  password: "xRzVSzQGR3GuoiHfK5ArPLf6yFvej3og",
+  db: 0,
+});
 
 const typeDefs = gql`
   type User {
