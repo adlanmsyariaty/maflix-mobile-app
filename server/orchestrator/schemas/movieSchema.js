@@ -3,13 +3,13 @@ const usersBaseUrl = "https://maflix-service-user.herokuapp.com";
 const moviesBaseUrl = "https://maflix-service-app.herokuapp.com";
 const axios = require("axios");
 const Redis = require("ioredis");
-const redis = new Redis({
-  port: 13863,
-  host: "redis-13863.c278.us-east-1-4.ec2.cloud.redislabs.com",
-  username: "default",
-  password: "xRzVSzQGR3GuoiHfK5ArPLf6yFvej3og",
-  db: 0,
-});
+// const redis = new Redis({
+//   port: 13863,
+//   host: "redis-13863.c278.us-east-1-4.ec2.cloud.redislabs.com",
+//   username: "default",
+//   password: "xRzVSzQGR3GuoiHfK5ArPLf6yFvej3og",
+//   db: 0,
+// });
 
 const typeDefs = gql`
   input MovieInput {
@@ -95,16 +95,20 @@ const resolvers = {
   Query: {
     getMovies: async () => {
       try {
-        const moviesCache = await redis.get("movies");
-        if (moviesCache) {
-          return JSON.parse(moviesCache);
-        } else {
-          const { data: movies } = await axios.get(
-            `${moviesBaseUrl}/movies?search`
-          );
-          await redis.set("movies", JSON.stringify(movies));
-          return movies;
-        }
+        // const moviesCache = await redis.get("movies");
+        // if (moviesCache) {
+        //   return JSON.parse(moviesCache);
+        // } else {
+        //   const { data: movies } = await axios.get(
+        //     `${moviesBaseUrl}/movies?search`
+        //   );
+        //   await redis.set("movies", JSON.stringify(movies));
+        //   return movies;
+        // }
+        const { data: movies } = await axios.get(
+          `${moviesBaseUrl}/movies?search`
+        );
+        return movies;
       } catch (error) {
         console.log(error);
       }
@@ -112,20 +116,28 @@ const resolvers = {
     getMovie: async (_, args) => {
       try {
         const id = +args.id;
-        const movieDetailCache = await redis.get("movieDetail");
-        if (movieDetailCache && JSON.parse(movieDetailCache).id === id) {
-          return JSON.parse(movieDetailCache);
-        } else {
-          const { data: movie } = await axios.get(
-            `${moviesBaseUrl}/movies/${id}`
-          );
-          const { data: user } = await axios.get(
-            `${usersBaseUrl}/users/${movie.UserMongoId}`
-          );
-          movie.User = user;
-          await redis.set("movieDetail", JSON.stringify(movie));
-          return movie;
-        }
+        // const movieDetailCache = await redis.get("movieDetail");
+        // if (movieDetailCache && JSON.parse(movieDetailCache).id === id) {
+        //   return JSON.parse(movieDetailCache);
+        // } else {
+        //   const { data: movie } = await axios.get(
+        //     `${moviesBaseUrl}/movies/${id}`
+        //   );
+        //   const { data: user } = await axios.get(
+        //     `${usersBaseUrl}/users/${movie.UserMongoId}`
+        //   );
+        //   movie.User = user;
+        //   await redis.set("movieDetail", JSON.stringify(movie));
+        //   return movie;
+        // }
+        const { data: movie } = await axios.get(
+          `${moviesBaseUrl}/movies/${id}`
+        );
+        const { data: user } = await axios.get(
+          `${usersBaseUrl}/users/${movie.UserMongoId}`
+        );
+        movie.User = user;
+        return movie;
       } catch (error) {
         console.log(error);
       }
@@ -133,17 +145,21 @@ const resolvers = {
     getMoviesByGenre: async (_, args) => {
       try {
         const id = +args.id;
-        const moviesByGenre = await redis.get("moviesByGenre");
+        // const moviesByGenre = await redis.get("moviesByGenre");
 
-        if (moviesByGenre && JSON.parse(moviesByGenre).id === id) {
-          return JSON.parse(moviesByGenre);
-        } else {
-          const { data: movies } = await axios.get(
-            `${moviesBaseUrl}/users/movies/genres?genre=${id}`
-          );
-          await redis.set("moviesByGenre", JSON.stringify(movies));
-          return movies;
-        }
+        // if (moviesByGenre && JSON.parse(moviesByGenre).id === id) {
+        //   return JSON.parse(moviesByGenre);
+        // } else {
+        //   const { data: movies } = await axios.get(
+        //     `${moviesBaseUrl}/users/movies/genres?genre=${id}`
+        //   );
+        //   await redis.set("moviesByGenre", JSON.stringify(movies));
+        //   return movies;
+        // }
+        const { data: movies } = await axios.get(
+          `${moviesBaseUrl}/users/movies/genres?genre=${id}`
+        );
+        return movies;
       } catch (error) {
         console.log(error);
       }

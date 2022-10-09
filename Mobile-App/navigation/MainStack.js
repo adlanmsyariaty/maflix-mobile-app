@@ -9,7 +9,7 @@ function MainStack() {
     <Stack.Navigator>
       <Stack.Screen
         name="MovieTab"
-        component={MovieTab} 
+        component={MovieTab}
         options={{ headerShown: false }}
       />
       <Stack.Screen
