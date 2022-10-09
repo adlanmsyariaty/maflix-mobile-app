@@ -27,6 +27,7 @@ const resolvers = {
   Query: {
     getGenres: async () => {
       try {
+<<<<<<< HEAD
         // const genresCache = await redis.get("genres");
         // if (genresCache) {
         //   return JSON.parse(genresCache);
@@ -41,6 +42,18 @@ const resolvers = {
           `${moviesBaseUrl}/users/genres`
         );
         return genres;
+=======
+        const genresCache = await redis.get("genres");
+        if (genresCache) {
+          return JSON.parse(genresCache);
+        } else {
+          const { data: genres } = await axios.get(
+            `${moviesBaseUrl}/users/genres`
+          );
+          await redis.set("genres", JSON.stringify(genres));
+          return genres;
+        }
+>>>>>>> a24ebfaf2f7babf1a0164a1607bedc77d484cd5f
       } catch (error) {
         console.log(error);
       }

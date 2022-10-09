@@ -95,6 +95,7 @@ const resolvers = {
   Query: {
     getMovies: async () => {
       try {
+<<<<<<< HEAD
         // const moviesCache = await redis.get("movies");
         // if (moviesCache) {
         //   return JSON.parse(moviesCache);
@@ -109,6 +110,18 @@ const resolvers = {
           `${moviesBaseUrl}/movies?search`
         );
         return movies;
+=======
+        const moviesCache = await redis.get("movies");
+        if (moviesCache) {
+          return JSON.parse(moviesCache);
+        } else {
+          const { data: movies } = await axios.get(
+            `${moviesBaseUrl}/movies?search`
+          );
+          await redis.set("movies", JSON.stringify(movies));
+          return movies;
+        }
+>>>>>>> a24ebfaf2f7babf1a0164a1607bedc77d484cd5f
       } catch (error) {
         console.log(error);
       }
@@ -116,6 +129,7 @@ const resolvers = {
     getMovie: async (_, args) => {
       try {
         const id = +args.id;
+<<<<<<< HEAD
         // const movieDetailCache = await redis.get("movieDetail");
         // if (movieDetailCache && JSON.parse(movieDetailCache).id === id) {
         //   return JSON.parse(movieDetailCache);
@@ -138,6 +152,22 @@ const resolvers = {
         );
         movie.User = user;
         return movie;
+=======
+        const movieDetailCache = await redis.get("movieDetail");
+        if (movieDetailCache && JSON.parse(movieDetailCache).id === id) {
+          return JSON.parse(movieDetailCache);
+        } else {
+          const { data: movie } = await axios.get(
+            `${moviesBaseUrl}/movies/${id}`
+          );
+          const { data: user } = await axios.get(
+            `${usersBaseUrl}/users/${movie.UserMongoId}`
+          );
+          movie.User = user;
+          await redis.set("movieDetail", JSON.stringify(movie));
+          return movie;
+        }
+>>>>>>> a24ebfaf2f7babf1a0164a1607bedc77d484cd5f
       } catch (error) {
         console.log(error);
       }
@@ -145,6 +175,7 @@ const resolvers = {
     getMoviesByGenre: async (_, args) => {
       try {
         const id = +args.id;
+<<<<<<< HEAD
         // const moviesByGenre = await redis.get("moviesByGenre");
 
         // if (moviesByGenre && JSON.parse(moviesByGenre).id === id) {
@@ -160,6 +191,19 @@ const resolvers = {
           `${moviesBaseUrl}/users/movies/genres?genre=${id}`
         );
         return movies;
+=======
+        const moviesByGenre = await redis.get("moviesByGenre");
+
+        if (moviesByGenre && JSON.parse(moviesByGenre).id === id) {
+          return JSON.parse(moviesByGenre);
+        } else {
+          const { data: movies } = await axios.get(
+            `${moviesBaseUrl}/users/movies/genres?genre=${id}`
+          );
+          await redis.set("moviesByGenre", JSON.stringify(movies));
+          return movies;
+        }
+>>>>>>> a24ebfaf2f7babf1a0164a1607bedc77d484cd5f
       } catch (error) {
         console.log(error);
       }
